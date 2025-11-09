@@ -3,7 +3,6 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import "./App.css";
 import { Suspense } from "react";
 import { ToastContainer } from "react-toastify";
 import ProductList from "./pages/product/ProductList";

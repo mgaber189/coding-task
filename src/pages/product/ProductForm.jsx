@@ -150,6 +150,15 @@ const ProductForm = () => {
                   <label className="font-medium mb-2">Product Name (AR)</label>
                   <Input
                     name="product_name"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     value={values.product_name}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -168,6 +177,15 @@ const ProductForm = () => {
                   <Input
                     name="product_name_en"
                     value={values.product_name_en}
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     onChange={handleChange}
                     onBlur={handleBlur}
                     placeholder="Enter product name in English"
@@ -185,6 +203,15 @@ const ProductForm = () => {
                   <Input
                     type="number"
                     name="number_of_pieces"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     value={values.number_of_pieces}
                     onChange={handleChange}
                   />
@@ -196,6 +223,15 @@ const ProductForm = () => {
                   <Input
                     type="number"
                     name="product_price"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     value={values.product_price}
                     onChange={handleChange}
                   />
@@ -209,6 +245,15 @@ const ProductForm = () => {
                   <Input
                     type="number"
                     name="price_after_discount"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     value={values.price_after_discount}
                     onChange={handleChange}
                   />
@@ -219,6 +264,15 @@ const ProductForm = () => {
                   <label className="font-medium mb-2">Discount (%)</label>
                   <Input
                     type="number"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     name="discount"
                     value={values.discount}
                     onChange={handleChange}
@@ -230,6 +284,7 @@ const ProductForm = () => {
                   <label className="font-medium mb-2">Visibility</label>
                   <Select
                     value={values.product_hidden}
+                    className="w-full custom-select"
                     onChange={(val) => setFieldValue("product_hidden", val)}
                     options={[
                       { label: "Yes", value: "yes" },
@@ -243,6 +298,15 @@ const ProductForm = () => {
                   <label className="font-medium mb-2">Description</label>
                   <Input.TextArea
                     name="product_description"
+                    style={{
+                      width: "100%",
+                      borderRadius: "0.75rem",
+                      backgroundColor: "#F1F4F9",
+                      color: "#202224",
+                      padding: "0.75rem 1.25rem",
+                      border: "1px solid transparent",
+                      outline: "none",
+                    }}
                     value={values.product_description}
                     onChange={handleChange}
                     rows={4}
